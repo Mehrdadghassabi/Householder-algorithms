@@ -61,4 +61,4 @@ and here it is the result of running with 10 generation & initial guess equal to
 compare it with newton raphson result diagram!
 
 
-![Screenshot from 2023-07-12 01-42-32](https://github.com/Mehrdadghassabi/Householder-methods/assets/53050138/2311844c-8a31-48c9-a3c0-b6edc65a2fe9)
+![Screenshot from 2023-07-12 02-40-09](https://github.com/Mehrdadghassabi/Householder-methods/assets/53050138/d19b3de8-904c-4c3d-923d-2f8cd4508bce)
