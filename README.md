@@ -41,21 +41,21 @@ lets write taylor serie with $`d=2`$
 
 $`\frac{f(x_n)}{0!} + \frac{f'(x_n)}{1!}(x_{n+1} - x_n) + \frac{f''(x_n)}{2!}(x_{n+1} - x_n) = 0`$
 
-$`\frac{cos(x)}{0!} + \frac{-sin(x)}{1!}(x_{n+1} - x_n)  + \frac{-cos(x)}{2!}(x_{n+1} - x_n)^2 = 0`$
+$`\frac{cos(x_n)}{0!} + \frac{-sin(x_n)}{1!}(x_{n+1} - x_n)  + \frac{-cos(x_n)}{2!}(x_{n+1} - x_n)^2 = 0`$
 
-$`(\frac{1}{2}cos(x))x_{n+1}^2 + (-sin(x)+cos(x))x_{n+1} +(-\frac{1}{2}cos(x)x^2 + sin(x)x + cos(x)) = 0`$
+$`(\frac{1}{2}cos(x_n))x_{n+1}^2 + (-sin(x_n)+cos(x_n))x_{n+1} +(-\frac{1}{2}cos(x_n)x_n^2 + sin(x_n)x_n + cos(x_n)) = 0`$
 
 lets solve this equation using <a href=https://en.wikipedia.org/wiki/Quadratic_equation>delta</a> method, with
 
-$`a = \frac{1}{2}cos(x)`$
+$`a = \frac{1}{2}cos(x_n)`$
 
-$`b = -sin(x)+cos(x)`$
+$`b = -sin(x_n)+cos(x_n)`$
 
-$`c = -\frac{1}{2}cos(x)x^2 + sin(x)x + cos(x)`$
+$`c = -\frac{1}{2}cos(x_n)x_n^2 + sin(x_n)x_n + cos(x_n)`$
 
-$`\Delta = (-sin(x)+cos(x))^2 - 4(\frac{1}{2}cos(x))(-\frac{1}{2}cos(x)x^2 + sin(x)x + cos(x))`$
+$`\Delta = (-sin(x_n)+cos(x_n))^2 - 4(\frac{1}{2}cos(x_n))(-\frac{1}{2}cos(x_n)x_n^2 + sin(x_n)x_n + cos(x_n))`$
 
-$`x_{n+1} = \frac{(sin(x)-cos(x) \pm \sqrt{\Delta})}{cos(x)}`$
+$`x_{n+1} = \frac{(sin(x_n)-cos(x_n) \pm \sqrt{\Delta})}{cos(x_n)}`$
 
 and here it is the result of running with 10 generation & initial guess equal to one(in radian),
 compare it with newton raphson result diagram!
