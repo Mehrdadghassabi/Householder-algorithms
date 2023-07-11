@@ -13,13 +13,13 @@ lets take an example, consider $`cos(x)`$ as the function that we want to find i
 ### householder number 1 (<a href=https://en.wikipedia.org/wiki/Newton%27s_method>newton raphson method</a>)
 writting taylor serie with $`d=1`$ we would have:
 
-$`(f(x_n)/0!)+ (f'(x_n)/1!)*(x_{n+1} - x_n) = 0`$
+$`\frac{f(x_n)}{0!}+ \frac{f'(x_n)}{1!}*(x_{n+1} - x_n) = 0`$
 
-$`(cos(x)/0!)+ (-sin(x)/1!)*(x_{n+1} - x_n) = 0`$
+$`\frac{cos(x)}{0!}+ \frac{-sin(x)}{1!}*(x_{n+1} - x_n) = 0`$
 
-$`cos(x) - sin(x)*x_{n+1} + sin(x)*x_n`$
+$`cos(x) - sin(x)*x_{n+1} + sin(x)*x_n = 0`$
 
-$`x_{n+1} =(-cos(x) - sin(x)*x_n)/(-sin(x)) = 0`$
+$`x_{n+1} =\frac{-cos(x) - sin(x)*x_n}{-sin(x)} = 0`$
 
 $`x_{n+1} =x_n + cot(x) `$
 
@@ -32,4 +32,6 @@ if you want to solve another equation replace these lines with your function and
 ```
 and here it is the result of running with 10 generation & initial guess equal to one(in radian),
 notice that the sequence approaches to the nearest answer to the initial guess.
+
+
 ![Screenshot from 2023-07-11 23-12-09](https://github.com/Mehrdadghassabi/Householder-methods/assets/53050138/56cc49e5-2ebe-488a-9323-cdd6e71b03a4)
