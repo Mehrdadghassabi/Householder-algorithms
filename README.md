@@ -10,8 +10,13 @@ writing <a href=https://en.wikipedia.org/wiki/Taylor_series>Taylor_serie</a> of 
 the householder class) around $`x_n`$ with $`x_n+1`$ as the variable, solving it as algebraic equation would give us the update formula!!
 lets take an example, consider $`cos(x)`$ as the function that we want to find its roots writting taylor serie with $`n=1`$ .
 we would have:
+
 $`(f(x_n)/0!)+ (f'(x_n)/1!)*(x_n+1 - x_n) = 0`$
+
 $`(cos(x)/0!)+ (-sin(x)/1!)*(x_n+1 - x_n) = 0`$
+
 $`cos(x) - sin(x)*x_n+1 + sin(x)*x_n`$
+
 $`x_n+1 =(-cos(x) - sin(x)*x_n)/(-sin(x))`$
+
 $`x_n+1 =x_n + cot(x) `$
