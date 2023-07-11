@@ -62,3 +62,9 @@ compare it with newton raphson result diagram!
 
 
 ![Screenshot from 2023-07-12 02-40-09](https://github.com/Mehrdadghassabi/Householder-methods/assets/53050138/d19b3de8-904c-4c3d-923d-2f8cd4508bce)
+
+
+## question
+consider Halley method, what happen if $`\Delta`$ became negative? 
+the answer would be an update method including a complex function, does the root finding algorithms have meaning in the complex plane?
+<a href=https://math.stackexchange.com/questions/1033430/complex-root-finding>a related link</a>
