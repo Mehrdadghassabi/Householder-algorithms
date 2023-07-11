@@ -36,9 +36,29 @@ notice that the sequence approaches to the nearest answer to the initial guess.
 
 ![Screenshot from 2023-07-11 23-12-09](https://github.com/Mehrdadghassabi/Householder-methods/assets/53050138/56cc49e5-2ebe-488a-9323-cdd6e71b03a4)
 
-### householder number 2 (<a href=https://en.wikipedia.org/wiki/Halley%27s_method>Halley</a>)
+### householder number 2 (<a href=https://en.wikipedia.org/wiki/Halley%27s_method>Halley method</a>)
 lets write taylor serie with $`d=2`$
 
 $`\frac{f(x_n)}{0!} + \frac{f'(x_n)}{1!}(x_{n+1} - x_n) + \frac{f''(x_n)}{2!}(x_{n+1} - x_n) = 0`$
 
 $`\frac{cos(x)}{0!} + \frac{-sin(x)}{1!}(x_{n+1} - x_n)  + \frac{-cos(x)}{2!}(x_{n+1} - x_n)^2 = 0`$
+
+$`(\frac{1}{2}cos(x))x_{n+1}^2 + (-sin(x)+cos(x))x_{n+1} +(-\frac{1}{2}cos(x)x^2 + sin(x)x + cos(x)) = 0`$
+
+lets solve this equation using <a href=https://en.wikipedia.org/wiki/Quadratic_equation>delta</a> method, with
+
+$`a = \frac{1}{2}cos(x)`$
+
+$`b = -sin(x)+cos(x)`$
+
+$`c = -\frac{1}{2}cos(x)x^2 + sin(x)x + cos(x)`$
+
+$`\delta = (-sin(x)+cos(x))^2 - 4(\frac{1}{2}cos(x))(-\frac{1}{2}cos(x)x^2 + sin(x)x + cos(x))`$
+
+$`x_{n+1} = \frac{(sin(x)-cos(x) \pm \sqrt{\delta})}{cos(x)}`$
+
+and here it is the result of running with 10 generation & initial guess equal to one(in radian),
+compare it with newton raphson result diagram!
+
+
+![Screenshot from 2023-07-12 01-42-32](https://github.com/Mehrdadghassabi/Householder-methods/assets/53050138/2311844c-8a31-48c9-a3c0-b6edc65a2fe9)
