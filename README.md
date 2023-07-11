@@ -53,9 +53,9 @@ $`b = -sin(x)+cos(x)`$
 
 $`c = -\frac{1}{2}cos(x)x^2 + sin(x)x + cos(x)`$
 
-$`\delta = (-sin(x)+cos(x))^2 - 4(\frac{1}{2}cos(x))(-\frac{1}{2}cos(x)x^2 + sin(x)x + cos(x))`$
+$`\Delta = (-sin(x)+cos(x))^2 - 4(\frac{1}{2}cos(x))(-\frac{1}{2}cos(x)x^2 + sin(x)x + cos(x))`$
 
-$`x_{n+1} = \frac{(sin(x)-cos(x) \pm \sqrt{\delta})}{cos(x)}`$
+$`x_{n+1} = \frac{(sin(x)-cos(x) \pm \sqrt{\Delta})}{cos(x)}`$
 
 and here it is the result of running with 10 generation & initial guess equal to one(in radian),
 compare it with newton raphson result diagram!
