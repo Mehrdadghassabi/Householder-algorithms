@@ -15,13 +15,13 @@ writting taylor serie with $`d=1`$ we would have:
 
 $`\frac{f(x_n)}{0!}+ \frac{f'(x_n)}{1!}(x_{n+1} - x_n) = 0`$
 
-$`\frac{cos(x)}{0!}+ \frac{-sin(x)}{1!}(x_{n+1} - x_n) = 0`$
+$`\frac{cos(x_n)}{0!}+ \frac{-sin(x_n)}{1!}(x_{n+1} - x_n) = 0`$
 
-$`cos(x) - sin(x)x_{n+1} + sin(x)x_n = 0`$
+$`cos(x_n) - sin(x_n)x_{n+1} + sin(x_n)x_n = 0`$
 
-$`x_{n+1} =\frac{-cos(x) - sin(x)x_n}{-sin(x)} = 0`$
+$`x_{n+1} =\frac{-cos(x_n) - sin(x_n)x_n}{-sin(x_n)} = 0`$
 
-$`x_{n+1} =x_n + cot(x) `$
+$`x_{n+1} =x_n + cot(x_n) `$
 
 here in <a href=https://github.com/Mehrdadghassabi/Householder-methods/blob/main/householder_method.ipynb>this</a> jupyter notebook file
 I implemented a function to solve $`cos(x) = 0`$ equation with a given initial guess and number of generation
